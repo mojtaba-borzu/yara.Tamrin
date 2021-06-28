@@ -1,0 +1,215 @@
+@font-face {
+    font-family: IranSans;
+    src: url('./IRANSans.ttf');
+  }
+  body{
+      background-color: rgb(230, 227, 227);
+  }
+  hr{ 
+      border-top: 1px solid rgb(168, 168, 168);
+      width: 100%;
+  }
+  a{
+      text-decoration: none;
+      font-family: IranSans;
+     color: gray;
+  }
+  #main{
+      display: flex;
+      
+      justify-content:center;
+      
+      height: auto;
+  }
+  #mainDiv{
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+     
+      justify-content: center;
+  }
+  #nav{
+      display: flex;
+     
+      justify-content:center;
+    
+      background-color: #fff;
+      height: 60px;
+     
+
+  }
+#navHeader{
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:flex-start;
+    align-items: center;
+
+
+  }
+  #navItem{
+      width: 80%;
+      height: auto;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:flex-start;
+    
+  }
+  #navItem ul{
+    width: 100%;
+    height: auto;
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content:flex-start;
+  align-items: center;
+  list-style-type: none;
+} 
+#navItem ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+   font-size: 15px;
+}
+  #navItem ul li:hover  a {
+      background-color: rgb(192, 192, 192);
+      border-radius: 5px;
+
+  }
+
+  .listImg{
+    width: 20%;
+
+  }
+  #nav div{
+      padding-right: 15px;
+  }
+
+  #nav div img {
+      width:70px;
+      height:50px;
+  }
+
+    #content {
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content:center;
+        align-items: center;
+        height: 500px;
+      
+    }
+    #mainTitle{
+        display: flex;
+        justify-content:flex-end;
+        font-family: IranSans;
+        margin-right: 20px;
+    }
+    .mainContent{
+        width: 300px;
+        height: 100%;
+        display: flex;
+       background-color: #fff;
+       margin: 7px;
+        border-radius: 10px;
+        flex-direction:column
+
+
+    }
+    .img{
+        width: 100%;
+        height: 200px;
+        max-height: 200px;
+       
+        border-radius: 10px;
+        
+    }
+    .mainContent img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        position: relative;
+       
+    }
+   
+    .ticket{
+        display: flex;
+        position: absolute;
+        align-content:flex-end ;
+        margin-top: 187px;
+        margin-left: 20px;
+        font-family: IranSans;
+        color: #fff;
+        
+   
+    
+    }
+    .ticket span{
+        background-color: rgb(87, 173, 0);
+        padding: 2px;
+        border-radius: 5px;
+    }
+  
+    .mainContent h4{
+        display: flex;
+        justify-content: flex-end;
+        font-family: IranSans;
+        padding-right: 7px;
+    }
+    .mainContent p {
+        display: flex;
+        justify-items: center;
+        direction: rtl;
+        text-align: justify;
+        margin: 10px;
+        font-family: IranSans;
+        display: block;/* or inline-block */
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+        overflow: hidden;
+        max-height: 3.6em;
+        line-height: 1.8em;
+     
+    }
+    .view{
+        display: flex;
+align-content: center;
+margin-left: 10px;
+
+    }
+    .view span{
+        padding-top: 1px;
+        font-family: IranSans;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .text{
+      height: 100px;
+     max-lines:2;
+    }
+    .footerContent {
+        display: flex;
+        
+        justify-content: flex-start;
+        margin-right: 10px;
+        align-items:center;
+        align-content: center;
+        flex-direction:row-reverse;
+        font-family: IranSans;}
+
+    .footerContent img{
+       width:  50px;
+height: 50px;
+margin-left: 20px;
+    }
+    label{
+        margin-top: 35px;
+        font-size: 25px;
+        display: none;
+    }
+    #toggle{
+        display: none ;
+
+    }
+
+    
