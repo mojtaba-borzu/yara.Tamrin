@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div id="container">
+            <ul>
+                <li>5</li>
+                <li>10</li>
+                <li>15</li>
+                <li class="child">20</li>
+                <li>25</li>
+                <li>30</li>
+            </ul>
+            <div class="child">
+                <p>99</p>
+            </div>
+            <div class="child">
+                <p>63</p>
+
+            </div>
+            <div id="bNg8Rb">
+                <p></p>
+            </div>
+            <div id="CAIQAA"></div>
+            <div id="LC20lb"></div>
+        </div>
+        <ul> 
+        </ul>
+    </div>
+    <script>
+//A : last item
+let list = document.getElementById("container").firstElementChild.lastElementChild.innerHTML;
+document.getElementById("bNg8Rb").lastElementChild.innerHTML=list
+//B: addition Number of list 
+let add =document.getElementById("container").firstElementChild.children
+let txt=0  ;
+  let i;
+  for (i = 0; i < add.length; i++) {
+    txt = txt + Number(add[i].innerHTML); 
+  }
+ document.getElementById("CAIQAA").innerHTML=txt
+//C: max Number
+let find = document.getElementsByClassName("child").length
+let num =[]
+  let j=0;
+  for (j = 0; j < find; j++) {
+(Number(document.getElementsByClassName("child")[j].innerHTML)===undefined)?
+num.push(Number(document.getElementsByClassName("child")[j].innerHTML))
+:num.push(Number(document.getElementsByClassName("child")[j].textContent))
+  }
+  console.log(Math.max(...num))
+  document.getElementById('LC20lb').innerHTML=Math.max(...num)
+
+    </script>
+</body>
+</html>
